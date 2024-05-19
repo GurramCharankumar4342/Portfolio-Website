@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./mygallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="bg">
+   <div id="header">
+    <div id="port">
+        <h2>Port<span>folio</span></h2>
+    </div>
+    <div id="nav">
+        <a href="#main">Home</a>
+        <a href="#section">About Me</a>
+        <a href="">Services</a>
+        <a href="#det">Education</a>
+        <a href="#allskills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div id="sidebar">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </div>
+   </div>
+<div id="main">
+   <div id="main1">
+    <h4>Hello! My name is</h4>
+    <h1><span>Gurram </span> Charan <span id="co">Kumar</span></h1>
+    <h2>I'm a Web Developer </h2><br>
+    <a href="">Download CV</a>
+   </div>
+   <div id="main2">
+    <img src="./charanimg.jpg" alt="" height="600px" width="600px">
+   </div>
+</div>
+</div>
+<!-- <hr> -->
+<div id="section">
+<div id="section1">
+    <img src="./58462.jpg" alt="" height="400px">
+</div>
+<div id="section2">
+    <h2>About Me</h2>
+    <h4><u>Web Developer</u></h4>
+    <p><i>I'm a front-end web developer.I can provide clean code <br>
+    and pixel perfect design.I also make the website more and <br>
+    more interactive with web animations.I also make the website <br>
+    more attractive.A responsive design makes your website accessible <br>
+    to all users,regardless of their device.</i>
+    </p>
+    <a href="">Let's Talk</a>
+</div>
+</div>
+<div id="det">
+ <center><h1>Education Details</h1></center>
+<div id="education">
+    <div id="mca" class="edu">
+    <h3><span>College:</span>N.B Science College</h3>
+    <h3><span>Group:</span>MCA</h3>
+    <h3><span>Percentage:</span>78%</h3>
+    <h3><span>Year Of Passing:</span>2023</h3>
+        </div>
+        <div id="degree" class="edu">
+    <h3><span>College:</span>Nagarjuna Government College</h3>
+    <h3><span>Group:</span>BSC(MPCs)</h3>
+    <h3><span>Percentage:</span>89%</h3>
+    <h3><span>Year Of Passing:</span>2021</h3>
+        </div>
+        <div id="inter" class="edu">
+        <h3><span>College:</span>Pragathi Junior College</h3>
+    <h3><span>Group:</span>Intermediate</h3>
+    <h3><span>Percentage:</span>93%</h3>
+    <h3><span>Year Of Passing:</span>2018</h3>
+        </div>
+    
+        <div id="10th" class="edu">
+    <h3><span>School:</span>ZPPHS High School</h3>
+    <h3><span>Class:</span>10th</h3>
+    <h3><span>Percentage:</span>76%</h3>
+    <h3><span>Year Of Passing:</span>2016</h3>
+    </div>
+</div>
+</div>
+<div id="allskills">
+<center><h1>Skills</h1></center>
+<div id="skills">
+    <div id="fe">
+    <h3>Front-end</h3>
+   <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JAVA SCRIPT</li>
+   </ul>
+    </div>
+    <div id="be">
+    <h3>Back-end</h3>
+        <ul>
+            <li>CORE JAVA</li>
+            <li>ADV JAVA</li>
+        </ul>
+    </div>
+    <div id="db">
+    <h3>Data Base</h3>
+        <ul>
+            <li>SQL</li>
+        </ul>
+    </div>
+</div>
+</div>
+<center><br>
+<div id="hireme">
+    <h2>Let Me Get You A Beautiful Website </h2>
+    <a href="">Hire Me</a>
+</div>
+<div id="contact">
+    <h1>Contact <span>Me</span></h1>
+    <div id="grid">
+        <input type="text" name="fname" id="fname" placeholder="First Name"     >
+        <input type="text" name="lname" id="lname" placeholder="Last Name"      >
+        <input type="email" name="Email" id="email" placeholder="Email Address" >
+        <input type="text" name="number" id="mobile" placeholder="Mobile Number" >
+    </div>
+    <input type="text" name="msg" id="msg" placeholder="Your Message"     >
+    
+</div><br>
+<button id="btn1" type="submit">Send Message</button>
+<br><br><br>
+<div id="logos">
+    <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+    <a href=""><i class="fa-brands fa-twitter fa-2x"></i>  </a>
+    <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+</div>
+</center>
+<br><br><br><br><br>
+<script>
+   let btn=document.getElementById("btn1")
+   
+   btn.addEventListener("click",()=>{
+            let fname=document.getElementById("fname").value
+            let lname=document.getElementById("lname").value
+            let email=document.getElementById("email").value
+            let number=document.getElementById("mobile").value
+            let msg=document.getElementById("msg").value
+            sessionStorage.setItem("First Name",fname)
+            sessionStorage.setItem("Last Name",lname)
+            sessionStorage.setItem("Email",email)
+            sessionStorage.setItem("Mobile Number",number)
+            sessionStorage.setItem("msg",msg)
+   })
+    let btn1=document.getElementById("btn1")
+    btn1.addEventListener("click",(event)=>{
+       event.preventDefault()
+     if(confirm("Do you really want to send this message")){
+       console.log("Information is submitted");
+     }
+    })
+</script>
+</body>
+</html>
