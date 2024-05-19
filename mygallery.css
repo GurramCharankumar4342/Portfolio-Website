@@ -1,0 +1,264 @@
+*{
+    background-color: black;
+    color: aliceblue;
+}
+#bg{
+   
+    background-image: url(./charanimg.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+span{
+    color: orange;
+}
+#co{
+    color: rgb(38, 184, 38);
+}
+#nav a{
+   
+text-decoration: none;
+margin-left: 30px;
+font-weight: bold;
+padding: 5px ;
+}
+#nav a:hover{
+   
+    color: black;
+    text-decoration: underline;
+    background-color: rgb(195, 255, 0);
+    border-radius: 7px;
+
+}
+#nav a::after{
+    color: rgb(246, 255, 0);
+}
+h2{
+    color: white;
+}
+#main{
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+ }
+ #main2 img{
+    margin-right: 200px;
+ }
+ #main1{ 
+    /* border: 2px solid; */
+    height: 500px;
+    width: 1525px;
+    padding-top: 100px;
+
+} 
+#main1 h4,h1,h2{
+    /* border: 2px solid; */
+    width: fit-content;
+    padding-left: 150px;
+   
+}
+#main1 a,#hireme a{
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: rgb(91, 223, 173);
+    padding: 6px 10px;
+    text-decoration: none;
+    width: 30px;
+    margin-left: 150px;
+    color: blue;
+}
+
+#main1 h1{
+font-size: 50px;
+}
+#main1 h4{
+    font-size: 20px;
+}
+#section2 h2{
+    color: rgb(218, 204, 204);
+}
+#section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: aliceblue;
+   
+  
+}
+#section2 a{
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: rgb(231, 35, 81);
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+#det,#allskills,#hireme,#contact{
+    background-color: black;
+   
+}
+#det,#allskills:hover{
+    text-decoration: underline;
+
+}
+#education{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.edu{
+    border: 2px solid cornsilk;
+    border-radius: 10px;
+    padding: 20px;
+}
+.edu:hover{
+    /* background-color:deepskyblue; */
+    color: rgb(142, 29, 29);
+}
+#education h3 span:hover{
+    color: rgb(241, 8, 82);
+}
+#skills{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+   /* margin-right: 450px; */
+}
+#fe,#be,#db{
+    border: 2px solid rgba(255, 255, 255, 0.872);
+    border-radius: 10px;
+    padding: 20px;
+}
+#skills h3{
+    color: darkorange;
+}
+#hireme{
+    padding-top: 30px;
+    height: 150px;
+    background-color: rgb(52, 43, 43);
+    /* border: 2px solid white; */
+    /* position: fixed; */
+}
+#hireme h2{
+    background-color: rgb(52, 43, 43);
+}
+
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    width: 500px;
+    height: 100px;
+}
+#grid input{
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.877);
+    color: black;
+    font-size:medium;
+
+}
+#contact #msg{
+    width: 497px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.877);
+    color: black;
+    font-size:medium;
+}
+#contact h1{
+    /* border: 2px solid white; */
+    padding-right: 200px;
+}
+ #btn1{
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: rgb(189, 43, 226);
+    cursor:pointer;
+}
+#logos i{
+    /* border: 2px solid white; */
+    margin-left:50px ;
+}
+ @media only screen and (max-width: 680px){
+   
+    #header{
+        display: flex;
+        flex-direction: column;
+    }
+    span{
+        color: rgb(0, 195, 255);
+    }
+    #hireme{
+        background-color: rgb(52, 43, 43);
+        width: 1125px;
+    }
+    #contact #msg{
+        font-size:xx-large;
+    }
+    #contact h1{
+        width: 225px;
+        padding-left: 500px;
+    }
+    #section{
+     font-size: larger;
+     width: 1125px;
+    }
+    #det{
+        width: 1125px;
+    }
+    #allskills{
+        width: 1125px; 
+    }
+    #grid{
+        width: 800px;
+        margin-left: 200px;
+    }
+    #msg{
+        width: 1000px;
+        margin-left: 200px;
+        padding-right: 300px;
+    }
+    #btn1{
+        margin-left: 550px;
+    }
+    #logos{
+        margin-left: 425px;
+        display: flex;
+    }
+    #nav{
+        /* width: 1125px;  */
+        display: flex;
+        justify-content:center;
+        font-size: large;
+        /* border: 2px solid red;  */
+    }
+    #port{
+        margin-right: 400px;
+        font-size: x-large;
+    }
+    #header{
+        /* width: 405px;  */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:flex-start;
+    }
+    #sidebar{
+        padding-right: 50px;
+    }
+  
+}
